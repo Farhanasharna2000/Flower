@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.font{
+    font-family: sans-serif;
+}
+/* common styles */
+.container{
+    max-width:80%;
+    margin: 0 auto;
+}
+.color-1{
+    color: white;
+}
+.color-2{
+    color: #8d8686;
+}
+.color-3{
+    color: tomato;
+}
+.display-flex{
+    display: flex;
+}
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #ed5771;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+img{
+    width: 100%;
+}
+/* banner styles */
+.header{
+    background-color: rgb(255, 235, 238);
+ 
+}
+.banner-container{
+   align-items: center;
+   justify-content: space-between;
+   
+}
+.banner{
+    width: 50%;
+}
+.banner-title {
+    font-size: 3.75rem;
+    font-weight: 700;
+}
+.banner-description {
+    font-size: .9rem;
+    line-height: 18px;
+    margin: 25px 0 35px 0;
+}
+.banner-img img {
+    height: 600px;
+    margin-top: 30px;
+}
+/* feature styles */
+
+.feature{
+text-align: center;
+}
+.feature-title {
+    margin: 100px 0 20px 0;
+}
+.feature-description {
+    font-size: .9rem;
+    padding: 0 290px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+.feature-container {
+    gap: 15px;
+}
+.feature-img{
+    width: 32%;
+    text-align: center;
+}
+.feature-img img {
+    height: 300px;
+}
+#img-1 {
+    background-color: rgb(239 216 232);
+}
+#img-2 {
+    background-color: #daedf5;
+}
+#img-3 {
+    background-color: #dae8d8;
+}
+.feature-img a{
+    color: black;
+    font-weight: 600;
+
+}
+.feature-pic {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    padding: 80px 60px 0 60px;
+    margin-bottom: 30px;
+}
+/* icon styles */
+.icon-container {
+    background-color: rgb(229, 222, 222);
+    padding: 50px 100px;
+    justify-content: space-between;
+    text-align: center;
+    margin: 90px 0;
+}
+.icon img {
+    height: 60px;
+    width: 60px;
+    margin-top: 20px;
+}
+.icon-description{
+    margin: 20px 0;
+}
+/* deal styles */
+.deal-section{
+    background-color: rgba(250, 217, 224, 0.374);
+}
+.deal-container {
+    align-items: center;
+    text-align: center;
+    padding: 60px;
+    margin-bottom: 100px;
+}
+.deal-title {
+    font-size: 1.75rem;
+}
+.deal-description {
+    font-size: .9rem;
+    padding: 0 166px;
+    line-height: 24px;
+    margin: 20px 0 30px 0;
+}
+/* instagram styles */
+.instagram{
+    text-align: center;
+}
+.instagram-title {
+    font-size: 1.75rem;
+}
+.instagram-description {
+    font-size: .9rem;
+    padding: 0 280px;
+    line-height: 24px;
+    margin: 20px 0 25px 0;
+}
+.instagram-img {
+    gap: 15px;
+}
+.instagram-img img {
+    width: 25%;
+    height: 290px;
+    margin-bottom: 90px;
+}
+/* coupon styles */
+.coupon-container {
+    background-image: url(../images/Rectangle\ 9.png);
+    height: 336px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 90px;
+    text-align: center;   
+}
+.coupon-title {
+    padding-top: 98px;
+    font-size: 1.75rem;
+}
+.coupon-desription {
+    font-size: .9rem;
+    margin: 15px 0 40px 0;
+}
+.email {
+    padding: 15px 340px 15px 15px;
+    border: none;
+    border-radius: 10px;
+}
+.btn-primary {
+    color: white;
+    background-color: #ed5771;
+    padding: 14px 22px;
+    border-radius: 5px;
+    border: none;
+    font-size: .9rem;
+    margin-left: 5px;
+}
+/* footer styles */
+.footer {
+    background-color: black;
+    height: 227px;
+    text-align: center;
+    padding-top: 85px;
+}
+.footer-title {
+    font-size: 2rem;
+}
+.footer-description {
+    font-size: .9rem;
+    padding: 0 280px;
+    line-height: 24px;
+    margin: 20px 0 20px 0;
+}
+/* responsive styles */
+@media screen and (max-width:576px) {
+    .container {
+        max-width: 100% !important;
+    }
+    .banner-container,
+    .feature-container,
+    .icon-container,
+    .deal-container,
+    .instagram-img {
+      flex-direction: column;
+    }   
+    .banner {
+        width: 75%;
+    }
+    .banner-title {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+    .banner-description {
+        line-height: 24px;
+    }
+    .banner-img img {
+        height: 325px;
+    }
+    .btn {
+        padding: 10px 15px;
+        font-size: .9rem;
+    }
+    .feature-title {
+        margin: 40px 0 10px 0;
+        font-size: 1.25rem;
+    }
+    .feature-description {
+        padding: 0 83px;
+        line-height: 20px;
+        margin-bottom: 0px;
+    }
+    .feature-img {
+        width: 78%;
+        height: 342px;
+        margin: 60px;
+    }
+    .icon-container {
+        margin: 65px 0 0 0;
+    }
+    .deal-title {
+        font-size: 1.25rem;
+    }
+    .deal-description {
+        padding: 0 20px;
+    }
+    .deal-img img {
+        margin-top: 75px;
+    }
+    
+    .instagram-title {
+        font-size: 1.5rem;
+    }
+    .instagram-description {
+        padding: 0 79px;
+    }
+    .instagram-img {
+        gap: 0;
+    }
+    .instagram-img img {
+        width: 46%;
+        height: 227px;
+        margin-bottom: 30px;
+        margin-left: 145px;
+    }
+    .coupon-container {
+        height: 163px;
+        margin-bottom: 36px;
+    }
+    .coupon-title {
+        padding-top: 36px;
+        font-size: 1.25rem;
+    }
+    .coupon-desription {
+        font-size: .8rem;
+        margin: 10px 0 15px 0;
+    }
+    .email {
+        padding: 12px 36px 12px 12px;
+        border-radius: 5px;
+    }
+    .btn-primary {
+        padding: 10px 12px;
+        font-size: .8rem;
+    }
+    .footer {
+        padding-top: 65px;
+    }
+    .footer-title {
+        font-size: 1.75rem;
+    }
+    .footer-description {
+        padding: 0 96px;
+    }
+   
+}
+
